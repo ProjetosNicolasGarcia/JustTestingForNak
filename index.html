@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pages — Funcionando!</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 40px 48px;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+      background: #161b22;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #238636;
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #f0f6fc;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #8b949e;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #30363d;
+      margin: 28px 0;
+    }
+
+    .info {
+      font-size: 12px;
+      color: #484f58;
+    }
+
+    .info span {
+      color: #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">✓ online</div>
+    <h1>GitHub Pages funcionando!</h1>
+    <p>Se você está vendo essa página, o deploy deu certo.</p>
+    <hr class="divider" />
+    <p class="info">
+      Arquivo: <span>index.html</span><br />
+      Gerado em: <span id="date"></span>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('date').textContent =
+      new Date().toLocaleDateString('pt-BR', {
+        day: '2-digit', month: '2-digit', year: 'numeric'
+      });
+  </script>
+</body>
+</html>
